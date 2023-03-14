@@ -53,19 +53,19 @@ document.addEventListener("DOMContentLoaded", () => {
       intervalTime = intervalTime * speed;
       interval = setInterval(moveOutcomes, intervalTime);
     }
-    squares[currentSnake[0]].classList.add.apply("snake");
+    squares[currentSnake[0]].classList.add("snake");
   }
 
   function control(e) {
     squares[currentIndex].classList.remove("snake");
 
-    if (e.keycode === 39) {
+    if (e.keyCode === 39) {
       direction = 1;
-    } else if (e.keycode === 38) {
+    } else if (e.keyCode === 38) {
       direction = -width;
-    } else if (e.keycode === 37) {
+    } else if (e.keyCode === 37) {
       direction = -1;
-    } else if (e.keycode === 40) {
+    } else if (e.keyCode === 40) {
       direction = +width;
     }
   }
